@@ -1,0 +1,23 @@
+# Initialize and push the main branch
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/your-repo.git
+git remote add origin https://github.com/MonjurulArif/think-in-a-redux-way.git
+git push -u origin main
+
+# Create and switch to a new branch
+git checkout -b 1.2
+git add .
+git commit -m "Work for version 1.2"
+git push -u origin 1.2
+
+# Switch back to the main branch
+git checkout main
+
+# Merge 1.2 into main
+git merge 1.2
+
+# Delete the 1.2 branch locally and remotely
+git branch -d 1.2
+git push origin --delete 1.2
